@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--Once you define custom attr you can use them in layout XML files just  like
+      built-in attributes.
+      The only difference is that your attr belong to a different
+      namespace. ie instead of belonging to http://schemas.android.com/apk/res/android namespace,
+      they belong to http://schemas.android.com/apk/res/[package-name]
+      ie  http://schemas.android.com/apk/res/com.arachi.nkoroi.customviewandroiddocumentation
+     -->
+  <declare-styleable name="PieChart">
+    <attr name="showText" format="boolean"/>
+    <attr name="labelPositionNkoroi" format="enum">
+      <enum name="left" value="0"/>
+      <enum name="right" value="1"/>
+    </attr>
+
+  </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.arachi.nkoroi.customviewandroiddocumentation"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<!--Notice the name of the XML tag that
+   adds the custom view to the layout.
+   It is the fully qualified name of the custom view class.
+   If your view class is an inner class, you must further
+   qualify it with the name of the view's outer class. further.
+   For instance, the PieChart class has an inner class called PieView.
+   To use the custom attributes from this class, you would use the
+   tag com.example.customviews.charting.PieChart$PieView.
+-->
+  <com.arachi.nkoroi.customviewandroiddocumentation.PieChart
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      custom:showText="true"
+      custom:labelPostionNkoroi="left"
+      />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/nkoroi/github/CustomViewAndroidDocumentation/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/nkoroi/.android/build-cache/0dd17a68494718c2eea0d5b55241d1c827f32769/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/home/nkoroi/github/CustomViewAndroidDocumentation/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/nkoroi/.android/build-cache/0dd17a68494718c2eea0d5b55241d1c827f32769/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

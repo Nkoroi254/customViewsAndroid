@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res/com.arachi.nkoroi.customviewandroiddocumentation"
     android:layout_height="match_parent"
-    tools:context="com.arachi.nkoroi.customviewandroiddocumentation.MainActivity"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
     >
 
-  <TextView
-      android:layout_width="wrap_content"
+<!--Notice the name of the XML tag that
+   adds the custom view to the layout.
+   It is the fully qualified name of the custom view class.
+   If your view class is an inner class, you must further
+   qualify it with the name of the view's outer class. further.
+   For instance, the PieChart class has an inner class called PieView.
+   To use the custom attributes from this class, you would use the
+   tag com.example.customviews.charting.PieChart$PieView.
+-->
+  <com.arachi.nkoroi.customviewandroiddocumentation.PieChart
+      android:id="@+id/Pie"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
+      android:padding="10dp"
+      android:layout_weight="100"
+      custom:showText="true"
+      custom:labelHeight="20dp"
+      custom:labelWidth="110dp"
+      custom:labelY="85dp"
+      custom:labelPositionNkoroi="left"
+      custom:highlightStrength="1.12"
+      android:background="@android:color/white"
+      custom:pieRotation="0"
+      custom:labelColor="@android:color/black"
+      custom:autoCenterPointerInSlice="true"
+      custom:pointerRadius="4dp"
       />
 
-</android.support.constraint.ConstraintLayout>
+  <Button
+      android:id="@+id/Reset"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/reset_button"
+      />
+
+</LinearLayout>
